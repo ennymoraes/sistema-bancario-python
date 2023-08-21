@@ -64,7 +64,7 @@ def criar_usuario(usuarios):
     usuario = filtrar_usuario(cpf, usuarios)
 
     if usuario:
-        print("\n@@@ Já existe usuário com esse CPF! @@@")
+        print("\nxxx Já existe usuário com esse CPF! xxx")
         return
 
     nome = input("Informe o nome completo: ")
@@ -89,7 +89,7 @@ def criar_conta(agencia, numero_conta, usuarios):
         print("\n=== Conta criada com sucesso! ===")
         return {"agencia": agencia, "numero_conta": numero_conta, "usuario": usuario}
 
-    print("\n@@@ Usuário não encontrado, fluxo de criação de conta encerrado! @@@")
+    print("\nxxx Usuário não encontrado, fluxo de criação de conta encerrado! xxx")
 
 
 def listar_contas(contas):
